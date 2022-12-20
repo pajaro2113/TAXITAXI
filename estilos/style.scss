@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Average Sans', sans-serif;
+
+}
+.contenedor-sobre-nosotros{
+    padding-bottom: 90px;
+}
+.titulo{
+    color: #000000;
+    font-size: 30px;
+    //background-color: aqua;
+    text-align: center;
+    margin-bottom: 60px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.37);
+}
+.header{
+    width: 100%;
+    height: 600px;
+    background: #707138; 
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(186, 179, 74, 0.671),hsla(54, 81%, 17%, 0.923)), url(../imagenes/fodo1.png);   
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(186, 179, 74, 0.671), hsla(54, 81%, 17%, 0.923)), url(../imagenes/fodo1.png); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    &-textos-header{
+        padding-top: 100px;
+        display: flex;
+        height: 430px;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        &-img{
+            width: 290px;
+        }
+        &-div{
+            flex-direction: column;
+            color: aliceblue;
+            text-align: left;
+            &-h1{
+                font-size:55px;
+            }
+            &-h2{
+                font-size: 30px;
+                padding-bottom: 20px;
+                font-weight: lighter;
+            }
+            &-h3{
+                cursor: pointer;
+                background-color: rgb(0, 0, 0);
+                font-weight: lighter;
+                width: 170px;
+                height: 41px;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                border-radius: 2px;
+                box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+            }
+            // &-h3:hover{
+            //     background-color: rgb(0, 0, 0);
+            //     transition: 1s;
+            // }
+        }
+        &-iniciarsesion{
+            box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+            &-arriba{
+                    //background: url(/imagenes/fodo1.jpg);
+                    background-color: rgba(255, 255, 255, 0.802);
+                    width: 270px;
+                    height: 80px;
+                    display: flex;
+                    align-items: flex-end;
+                    border-bottom: 2px solid #1e1e1d3c;
+                    border-radius: 10px 10px 0 0;
+                    &-h4{
+                        padding: 8px 20px;
+                    }
+                }
+            &-abajo{
+                background-color: rgba(255, 255, 255, 0.816);
+                width: 270px;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                //justify-content: center;
+                align-items: center;
+                &-search{
+                    border: solid 1.8px #ccc;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    padding: 3px 10px;
+                    //margin: 100px auto;
+                    background-color: rgba(255, 255, 255, 0.802);
+                    width: 80%;
+                    margin-top: 18px;
+                    
+                    &-input{
+                        background-color: rgba(255, 255, 255, 0.802);
+                        border: none;
+                        outline: none;
+                        font-size: 18px;
+                        flex: auto;
+                        align-items: center;
+                        width: 95%;
+                    }
+                    &-user{
+                        width: 21px;
+                    }
+                }
+                &-search:focus-within{
+                    border: solid .1px #aaa;
+                    //box-shadow: 0px 0.5px 4px rgb(78, 74, 74, 0.3);
+                    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+                    transition: .2s;
+                }
+                &-boton{
+                    padding-top: 23px;
+                    cursor: pointer;
+                    &-h4{
+                        padding: 6px 15px;
+                        color: aliceblue;
+                        font-weight: 300;
+                        background: #000000;
+                        border-radius: 2px;
+                        letter-spacing: 1px;
+                        box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+
+                    }
+                }
+            }
+            
+        }
+    }
+}
+.nav{
+    background-color: rgb(31, 30, 30);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+    padding: 14px 5px 14px 5px;
+    &-nombre{
+        color: rgb(215, 232, 22);
+        &-h1{
+            padding-left: 40px;
+        }
+    }
+    &-menu{
+        padding-right: 40px;
+        &-a{
+            color: aliceblue;
+            font-weight: 400;
+            text-decoration: none;
+            padding: 25px 10px 25px 10px;
+        }
+        &-a:hover{
+            transition: 1s;
+            background-color: rgb(31, 30, 30);
+        }
+    }
+}
+.nav:hover{
+    background-color: #000000;
+    transition: 1s;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.contenedor-sobre-nosotros-2{
+    justify-content: space-evenly;
+    display: flex;
+}
+.imagen-about{
+    width: 38%;
+    border-radius: 5px;
+}
+.contenido-textos{
+    width: 48%;
+
+}
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+
+.contenido-textos h3 span{
+    background: #0a0a09;
+    color: yellow;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+    box-shadow: 0px 3px 15px 3px #000000;
+}
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+//galeria
+
+.imagenes{
+    background: #0000000b;
+    padding-bottom: 5%;
+    &-portafolio{
+        text-align: center;
+        font-size: 30px;
+        padding-top: 50px;
+    }
+    &-imageness{
+        display: flex;
+        justify-content: space-around;
+        
+        &-galeria{
+            cursor: pointer;
+            box-shadow: 16px 0 20px 0 (#0000002d);
+            &-img{
+                width: 260px;
+                border-radius: 4px;
+            }
+        }
+            &-galeria:hover{
+               z-index: -1;
+
+            }
+    }
+    &-imagenes2{
+        display: flex;
+        justify-content: space-around;
+        margin-top: -180px;
+        &-galeria{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 11px 60px;
+            border: 150px;
+            z-index: -1;
+            background: rgba(255, 255, 255, 0.549);
+                &-img{
+                    width: 140px;
+                    border-radius: 4px;
+            }
+        }
+    }
+}
+
+//NUESTRO EQUIPO
+.clientes-contenedor h2{
+    margin-bottom: 5px;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    //background: red;
+    &-card{
+        display: flex;
+        background-color: rgba(8, 8, 8, 0.154);
+        width: 25%;
+        padding: 25px 25px 25px 25px;
+        text-align: justify;
+        border-radius: 6px;
+        &-face1{
+            width: 280px;
+            height: 110px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 1px solid rgba(102, 102, 102, 0.429);
+        }
+        &-contenido-texto-card{
+            border-radius: 10px;
+            padding: 0 30px 0 30px;
+            background-color: rgb(255, 255, 255);
+        }
+    }
+    &-card:hover{
+        background-color: rgb(31, 30, 30);
+        transition: 1s;
+        
+    }
+}
+
+//NUESTROS SERVICIOS
+.about-services{
+    &-contenedor{
+        &-titulo{
+            text-align: center;
+            font-size: 30px;
+            padding: 70px 0 40px 0;
+        }
+        &-cont{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+            &-ind{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 350px;
+                padding-bottom: 40px;
+                &-img{
+                    width: 110%;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+}
+
+//FOOTER
+.footer{
+    padding: 30px 30px 0 30px;
+    background-color: rgb(31, 30, 30);
+    color: white;
+    &-contenedor{
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        &-foo{
+            padding-left: 70px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px 0px;
+            //border-right: 2px solid rgba(255, 255, 255, 0.33);
+            border-left: 2px solid rgba(169, 158, 158, 0.241);
+            &-h4{
+                font-weight: 200 bold;
+                font-size: 20px;
+            }
+            &-dos{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                &-img{
+                    width: 25px;
+                }
+            }
+            &-div{
+                display: flex;
+                gap: 12px;
+                &-img{
+                    width: 35px;
+                }
+            }
+        }
+    }
+    &-titulofinal{
+        font-weight: 200;
+        font-size: 15px;
+        padding-top: 20px;
+        text-align: center;
+    }
+}
+
+
