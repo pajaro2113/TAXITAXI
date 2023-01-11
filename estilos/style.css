@@ -205,18 +205,17 @@ body {
 .solicitud-contenido-uno-img {
   background-color: rgb(246, 246, 235);
   border-radius: 50%;
-  display: inline-block;
   width: 580px;
   height: 580px;
 }
 .solicitud-contenido-uno-img-img1 {
-  width: 380px;
+  width: 305px;
 }
 .solicitud-contenido-uno-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 20px;
+  row-gap: 18.5px;
 }
 .solicitud-contenido-uno-info-h2 {
   color: aliceblue;
@@ -230,7 +229,6 @@ body {
 }
 .solicitud-contenido-uno-info-botton {
   font-size: 24px;
-  color: aliceblue;
   cursor: pointer;
   background-color: #27AE60;
   font-weight: lighter;
@@ -241,6 +239,10 @@ body {
   display: flex;
   border-radius: 3px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.solicitud-contenido-uno-info-botton-a {
+  text-decoration: none;
+  color: aliceblue;
 }
 .solicitud-contenido-uno-info-botton:hover {
   background-color: #188545;
