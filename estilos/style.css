@@ -14,7 +14,7 @@ body {
   background: #707138;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgba(186, 179, 74, 0.671), hsla(54deg, 81%, 17%, 0.923)), url(../imagenes/fodo1.png);
+  background: linear-gradient(to right, rgba(186, 179, 74, 0.671), hsla(54deg, 81%, 17%, 0.923)), url(../imagenes/puente.jpg);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed;
@@ -30,7 +30,7 @@ body {
   text-align: center;
 }
 .header-textos-header-img {
-  width: 290px;
+  width: 360px;
 }
 .header-textos-header-div {
   flex-direction: column;
@@ -80,7 +80,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.header-textos-header-iniciarsesion-abajo-search {
+.header-textos-header-iniciarsesion-abajo-search1, .header-textos-header-iniciarsesion-abajo-search2 {
   border: solid 1.8px #ccc;
   border-radius: 8px;
   display: flex;
@@ -90,7 +90,7 @@ body {
   width: 80%;
   margin-top: 18px;
 }
-.header-textos-header-iniciarsesion-abajo-search-input {
+.header-textos-header-iniciarsesion-abajo-search1-input, .header-textos-header-iniciarsesion-abajo-search2-input {
   background-color: rgba(255, 255, 255, 0.802);
   border: none;
   outline: none;
@@ -99,7 +99,7 @@ body {
   align-items: center;
   width: 95%;
 }
-.header-textos-header-iniciarsesion-abajo-search-user {
+.header-textos-header-iniciarsesion-abajo-search1-user, .header-textos-header-iniciarsesion-abajo-search2-user {
   width: 21px;
 }
 .header-textos-header-iniciarsesion-abajo-search:focus-within {
@@ -158,7 +158,7 @@ body {
 
 .wave {
   position: absolute;
-  bottom: 0;
+  bottom: -70px;
   width: 100%;
 }
 
@@ -169,7 +169,7 @@ body {
 .titulos-titulo1 {
   font-weight: 900;
   font-size: 40px;
-  padding: 40px 0px 30px 90px;
+  padding: 90px 0px 30px 90px;
 }
 .titulos-titulo2 {
   padding: 0px 0px 30px 90px;
@@ -177,22 +177,74 @@ body {
   font-size: 56px;
 }
 
+.solicitud {
+  display: flex;
+  flex-direction: column;
+}
 .solicitud-titulo {
   font-size: 50px;
   font-weight: 100;
-  padding: 75px 0 60px 90px;
+  padding: 55px 0 10px 90px;
 }
 .solicitud-contenido {
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 52%;
+  width: 100%;
+  height: 100px;
+  background: #707138;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(186, 179, 74, 0.671), hsla(54deg, 81%, 17%, 0.923)), url(../imagenes/solicitud.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-attachment: fixed;
+  background-size: cover;
 }
-.solicitud-contenido-uno {
-  background: rgb(198, 107, 107);
+.solicitud-contenido-uno-img {
+  background-color: rgb(246, 246, 235);
+  border-radius: 50%;
+  display: inline-block;
+  width: 580px;
+  height: 580px;
+}
+.solicitud-contenido-uno-img-img1 {
+  width: 380px;
+}
+.solicitud-contenido-uno-info {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  row-gap: 20px;
+}
+.solicitud-contenido-uno-info-h2 {
+  color: aliceblue;
+  font-size: 40px;
+  font-weight: 600;
+}
+.solicitud-contenido-uno-info-texto {
+  color: aliceblue;
+  font-size: 27px;
+  font-weight: 200;
+}
+.solicitud-contenido-uno-info-botton {
+  font-size: 24px;
+  color: aliceblue;
+  cursor: pointer;
+  background-color: #27AE60;
+  font-weight: lighter;
+  width: 270px;
+  height: 51px;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.solicitud-contenido-uno-info-botton:hover {
+  background-color: #188545;
+  transition: 0.5s;
 }
 
 .section {

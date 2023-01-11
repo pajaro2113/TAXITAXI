@@ -14,9 +14,9 @@ body{
     height: 600px;
     background: #707138; 
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, rgba(186, 179, 74, 0.671),hsla(54, 81%, 17%, 0.923)), url(../imagenes/fodo1.png);   
+    background: -webkit-linear-gradient(to right, rgba(186, 179, 74, 0.671),hsla(54, 81%, 17%, 0.923)), url(../imagenes/puente.jpg);   
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, rgba(186, 179, 74, 0.671), hsla(54, 81%, 17%, 0.923)), url(../imagenes/fodo1.png); 
+    background: linear-gradient(to right, rgba(186, 179, 74, 0.671), hsla(54, 81%, 17%, 0.923)), url(../imagenes/puente.jpg); 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
@@ -30,7 +30,7 @@ body{
         justify-content: space-around;
         text-align: center;
         &-img{
-            width: 290px;
+            width: 360px;
         }
         &-div{
             flex-direction: column;
@@ -84,7 +84,7 @@ body{
                 flex-direction: column;
                 //justify-content: center;
                 align-items: center;
-                &-search{
+                &-search1, &-search2{
                     border: solid 1.8px #ccc;
                     border-radius: 8px;
                     display: flex;
@@ -168,8 +168,9 @@ body{
 }
 .wave{
     position: absolute;
-    bottom: 0;
+    bottom: -70px;
     width: 100%;
+    
 }
 
 //Nuestros Productos
@@ -181,7 +182,7 @@ body{
     &-titulo1{
         font-weight: 900;
         font-size: 40px;
-        padding: 40px 0px 30px 90px;
+        padding: 90px 0px 30px 90px;
     }
     &-titulo2{
         padding: 0px 0px 30px 90px;
@@ -192,21 +193,78 @@ body{
 
 //Como Solicitar
 .solicitud{
+    display: flex;
+    flex-direction: column;
+    
     &-titulo{
         font-size: 50px;
         font-weight: 100;
-        padding: 75px 0 60px 90px;
+        padding: 55px 0 10px 90px;
     }
     &-contenido{
         display: flex;
-        align-items: center;
         justify-content: space-around;
+        //background-color: #ae6a27;
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 52%;
+        width: 100%;
+        height: 100px;
+        background: #707138; 
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, rgba(186, 179, 74, 0.671),hsla(54, 81%, 17%, 0.923)), url(../imagenes/solicitud.jpg);   
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, rgba(186, 179, 74, 0.671), hsla(54, 81%, 17%, 0.923)), url(../imagenes/solicitud.jpg); 
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-attachment: fixed;
+        background-size: cover;
         &-uno{
-            background: rgb(198, 107, 107);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            align-content: center;
+            &-img{
+                    background-color: rgb(246, 246, 235);
+                    border-radius: 50%;
+                    display: inline-block;
+                    width: 580px;
+                    height: 580px;
+                    &-img1{
+                        width: 380px;
+                    }
+            }
+            &-info{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 20px;
+                &-h2{
+                    color: aliceblue;
+                    font-size: 40px;
+                    font-weight: 600;
+                }
+                &-texto{
+                    color: aliceblue;
+                    font-size: 27px;
+                    font-weight: 200;
+
+                }
+                &-botton{
+                    font-size: 24px;
+                    color: aliceblue;
+                    cursor: pointer;
+                    background-color: #27AE60;
+                    font-weight: lighter;
+                    width: 270px;
+                    height: 51px;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    border-radius: 3px;
+                    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+                }
+                &-botton:hover{
+                    background-color: #188545;
+                    transition: .5s;
+
+                }
+            }
         }
     }
 }
