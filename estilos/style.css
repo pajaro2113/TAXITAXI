@@ -20,6 +20,13 @@ body {
   background-attachment: fixed;
   position: relative;
 }
+.header-logowp-img {
+  width: 50px;
+  position: fixed;
+  cursor: pointer;
+  top: 90vh;
+  left: 205vh;
+}
 .header-textos-header {
   padding-top: 100px;
   display: flex;
@@ -305,87 +312,11 @@ body {
   cursor: pointer;
 }
 
-.imagenes {
-  background: rgba(0, 0, 0, 0.0431372549);
-  padding-bottom: 5%;
-}
-.imagenes-portafolio {
-  text-align: center;
-  font-size: 30px;
-  padding-top: 50px;
-}
-.imagenes-imageness {
-  display: flex;
-  justify-content: space-around;
-}
-.imagenes-imageness-galeria {
-  cursor: pointer;
-  box-shadow: 16px 0 20px 0 rgba(0, 0, 0, 0.1764705882);
-}
-.imagenes-imageness-galeria-img {
-  width: 260px;
-  border-radius: 4px;
-}
-.imagenes-imageness-galeria:hover {
-  z-index: -1;
-}
-.imagenes-imagenes2 {
-  display: flex;
-  justify-content: space-around;
-  margin-top: -180px;
-}
-.imagenes-imagenes2-galeria {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 11px 60px;
-  border: 150px;
-  z-index: -1;
-  background: rgba(255, 255, 255, 0.549);
-}
-.imagenes-imagenes2-galeria-img {
-  width: 140px;
-  border-radius: 4px;
-}
-
-.clientes-contenedor h2 {
-  margin-bottom: 5px;
-}
-
-.cards {
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 30px;
-}
-.cards-card {
-  display: flex;
-  background-color: rgba(8, 8, 8, 0.154);
-  width: 25%;
-  padding: 25px 25px 25px 25px;
-  text-align: justify;
-  border-radius: 6px;
-}
-.cards-card-face1 {
-  width: 280px;
-  height: 110px;
-  overflow: hidden;
-  border-radius: 50%;
-  border: 1px solid rgba(102, 102, 102, 0.429);
-}
-.cards-card-contenido-texto-card {
-  border-radius: 10px;
-  padding: 0 30px 0 30px;
-  background-color: rgb(255, 255, 255);
-}
-.cards-card:hover {
-  background-color: rgb(31, 30, 30);
-  transition: 1s;
-}
-
 .about-services-contenedor-titulo {
   text-align: center;
-  font-size: 30px;
-  padding: 70px 0 40px 0;
+  font-size: 45px;
+  font-weight: lighter;
+  padding: 100px 0 40px 0;
 }
 .about-services-contenedor-cont {
   display: flex;
@@ -395,10 +326,11 @@ body {
 }
 .about-services-contenedor-cont-ind {
   display: flex;
+  gap: 20px;
   flex-direction: column;
   align-items: center;
   width: 350px;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
 }
 .about-services-contenedor-cont-ind-img {
   width: 110%;
